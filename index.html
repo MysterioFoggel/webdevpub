@@ -26,6 +26,28 @@
   .thumbnail {
     box-shadow: 0 10px 20px rgba(0, 255, 55, 0.19), 0 6px 6px rgba(0, 255, 55, 0.23);
   }
+
+  .movingBall{
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(45deg, blue, yellow);
+      top: 50px;
+      animation-name: colorChange;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+  }
+
+  @keyframes colorChange{
+      33%{
+        background: linear-gradient(45deg, blue, green);
+      }
+      66%{
+        background: linear-gradient(45deg, red, green);
+      }
+      100%{
+        background: linear-gradient(45deg, red, yellow);
+      }
+  }
 </style>
 
 <head>
@@ -43,6 +65,8 @@
         </a>
     </div>
 </div>
+
+<div class="movingBall"></div>
 
 </body>
 
