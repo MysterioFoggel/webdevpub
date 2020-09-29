@@ -72,10 +72,18 @@
     position: fixed;
     margin-top: -72px;
     margin-left: -11.5px;
-    background: linear-gradient(45deg, blue, darkblue);
+    background: linear-gradient(45deg, rgb(0, 0, 82), rgb(0, 0, 145));
     border-color: white;
     border-width: 3px;
     border-style: solid;
+  }
+
+  .topButton{
+    margin-top: 18px;
+    height: 50%;
+    margin-left: 10px;
+    background-color: white;
+    color: black;
   }
 
 </style>
@@ -87,9 +95,14 @@
 
 <body>
 <div class="topHead">
-
+  <a href="#Foot">
+    <button class="topButton">Down</button>
+  </a>
+  <a href="#Top">
+    <button class="topButton">Top</button>
+  </a>
 </div>
-<div class="fullCard thumbnail">
+<div class="fullCard thumbnail" id="Top">
     <h1 style="color: lightgreen" class="big-text">The Start Of Something</h1>
     <div>
         <a href="#" target="_blank">
@@ -117,7 +130,7 @@
 <div>
   <legend>
     Hello World
-    <h1>Legend</h1>
+    <h1 id="Foot">Legend</h1>
     <p>Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text -</p>
     <p>Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text -</p>
     <p>Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text Temp Text -</p>
