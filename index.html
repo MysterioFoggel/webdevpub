@@ -10,6 +10,40 @@
     body {
     background-color: black;
     margin-left: 50px;
+    animation-name: colors;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      }
+      @keyframes colors{
+        10%{
+          background-color: rgb(0, 0, 0);
+        }
+        20%{
+          background-color: rgb(0, 0, 30);
+        }
+        30%{
+          background-color: rgb(0, 0, 60);
+        }
+        40%{
+          background-color: rgb(0, 0, 90);
+        }
+        50%{
+          background-color: rgb(0, 0, 120);
+        }
+        60%{
+          background-color: rgb(0, 0, 150);
+        }
+        70%{
+          background-color: rgb(0, 0, 180);
+        }
+        80%{
+          background-color: rgb(0, 0, 210);
+        }
+        90%{
+          background-color: rgb(0, 0, 240);
+        }
+      }
     
   }
 
@@ -58,33 +92,6 @@
         transform: scale(0.5);
       }
   }
-  .PartyTime:hover{
-      animation-name: party;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-  }
-
-  @keyframes party{
-      25%{
-        width: 160px;
-        height: 200px;
-        transform: scale(0.5);
-        transform: rotate(-180deg);
-      }
-      50%{
-        width: 800px;
-        height: 1000px;
-        margin-left: 0px;
-        transform: rotate(180deg);
-      }
-      75%{
-        width: 160px;
-        height: 200px;
-        transform: scale(0.5);
-        transform: rotate(-180deg);
-      }
-  }  
 
   .toright{
     left: 100%;
@@ -103,7 +110,7 @@
     <div>
         <a href="#" target="_blank">
             <img src="https://cdn.discordapp.com/attachments/490515668291289100/675737835625513010/IMG_20200208_133713_120.jpg" 
-            alt="A Picture Of Me" class="round thumbnail PartyTime" width="160" height="200">
+            alt="A Picture Of Me" class="round thumbnail" width="160" height="200">
         </a>
     </div>
 </div>
