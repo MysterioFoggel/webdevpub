@@ -51,6 +51,9 @@
     border-style: solid;
     border-color: white;
   }
+  .topButton:hover{
+    background: linear-gradient(315deg, rgb(164, 0, 185), rgb(145, 0, 137));
+  }
 
   .stage{
     width: 100px;
@@ -64,6 +67,7 @@
       animation: load 3s linear infinite;
       background-color:white;
   }
+  
 
   @keyframes load{
       0%,100%{
@@ -92,11 +96,14 @@
 <body>
 
     <div class="topHead">
-        <a href="index.html">
-          <button class="topButton">Home</button>
-        </a>
-        <a href="#">
-          <button class="topButton">Party</button>
+      <a href="index.html">
+        <button class="topButton">Home</button>
+      </a>
+      <a href="second.html">
+        <button class="topButton">Party</button>
+      </a>
+      <a href="game.html">
+          <button class="topButton">Game</button>
         </a>
       </div>
     <h1>party</h1>
