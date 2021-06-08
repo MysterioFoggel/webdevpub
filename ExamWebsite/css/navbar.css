@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 25%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.navHome{
+    color: #f2f2f2;
+    text-align: center;
+    background: linear-gradient(to right, #2c2c2c 0%, rgb(70, 70, 70) 40%, #313131 80%);
+    text-decoration: none;
+    font-size: 30px;
+
+    position: fixed;
+    background-color: #333;
+    width: 20%;
+    height: 20%;
+    top: 15%;
+    left: 2.5%;
+}
+.navHome:hover {
+    background: linear-gradient(to right, #adadad 0%, rgb(241, 241, 241) 40%, #b4b4b4 80%);
+    color: black;
+    animation: sparkle 200000s infinite linear;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    background: linear-gradient(to right, #2c2c2c 0%, rgb(70, 70, 70) 40%, #313131 80%);
+    text-decoration: none;
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+    padding-top: 5px;
+    animation: expax 1s;
+
+}
+
+.navbar a:hover {
+    background: linear-gradient(to right, #adadad 0%, rgb(241, 241, 241) 40%, #b4b4b4 80%);
+    color: black;
+    animation: expa 1s;
+    animation-fill-mode: both;
+}
+@keyframes sparkle{
+    0%{
+        background-position: 0px;}
+      100%{
+        background-position: 10000000px;
+      }
+}
+
+@keyframes expa{
+    0%{
+        width: 100%;}
+      100%{
+        width: 115%;
+      }
+}
+@keyframes expax{
+    0%{
+        width: 115%;}
+      100%{
+        width: 100%;
+      }
+}
+
+.navbar a.active {
+    background: linear-gradient(to right, #00ff2a 0, rgb(140, 255, 130) 50%, rgb(0, 99, 13) 100%);
+    color: white;
+}
+.navbar a.active:hover {
+    background: linear-gradient(to right, #6aff83 0, rgb(220, 255, 218) 50%, rgb(53, 150, 66) 100%);
+    color: white;
+    animation: expa 1s;
+    animation-fill-mode: both;
+}
+.navChild{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    margin-left: 2px;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(165, 165, 165);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    z-index: 1050;
+}
+.tempHover{
+    padding-left: 10px;
+    color: black;
+    background-color: rgb(160, 255, 173);
+}
+
+#Homeid{
+    padding-top: 20px;
+    width: 100%;
+
+}
+
+#Homeid :hover{
+    background-color: blue;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
